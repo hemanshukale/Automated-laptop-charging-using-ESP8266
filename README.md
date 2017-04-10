@@ -5,7 +5,8 @@ Optimize your battery life by automating it's charging cycles between 30% - 80%
 Many laptop users face this problem of battery dying - usually because of always keeping charging on, hence damaging battery 
 And it might be problematic to turn off the charger and risk the chance of laptop shutting down during a critical time if forgot to turn it back on 
 
-Here's an automated version of that -  
+Here's an automated version of that - 
+The supply to charger is turned on or off by relays controlled by ESP8266  
 currently made for Windows 10 (powershell) & bash on linux  
 
 Electronics needed -   
@@ -28,7 +29,7 @@ Pinouts -
   GPIO 12   - Transistor base with around 1K resistor in between ; can be pulled down for additional safety  
   GPPIO 0   - GND for flashing  
   
-  Connect 1 terminal of relay to 5V and other to collector of VCC  
+  Connect 1 terminal of relay to 5V and other to collector of trasnsistor  
   Emmitter  - GND  
   also connect a reverse biased diode to act as flyback diode between the terminals of the relay   
   
